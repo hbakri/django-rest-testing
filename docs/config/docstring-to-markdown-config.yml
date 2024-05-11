@@ -1,0 +1,10 @@
+modules:
+  # --------------------- Views -----------------------
+  - input_path: "api_test_case"
+    output_path: "APITestCase.md"
+  - input_path: "api_view_test_scenario"
+    output_path: "APIViewTestScenario.md"
+
+settings:
+  project_root: rest_testing
+  markdown_root: docs/reference

@@ -1,0 +1,16 @@
+docs:
+  # ------------------- Reference ---------------------
+  - title: "APITestCase"
+    slug: "api-test-case"
+    excerpt: "Guide to the declarative testing of API views"
+    categorySlug: "classes"
+    hidden: false
+    order: 0
+    path: "docs/reference/APITestCase.md"
+  - title: "APIViewTestScenario"
+    slug: "api-view-test-scenario"
+    excerpt: "Introduction to the scenario-based testing of API views"
+    categorySlug: "classes"
+    hidden: false
+    order: 1
+    path: "docs/reference/APIViewTestScenario.md"

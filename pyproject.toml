@@ -1,0 +1,63 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "django-rest-testing"
+version = "0.1.0"
+description = "Declarative REST API Tests with Django."
+authors = ["Hicham Bakri <hicham.bakri76@gmail.com>"]
+maintainers = ["Hicham Bakri <hicham.bakri76@gmail.com>"]
+readme = "README.md"
+homepage = "https://github.com/hbakri/django-rest-testing"
+license = "MIT"
+classifiers = [
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Development Status :: 4 - Beta",
+    "Topic :: Software Development :: Testing",
+    "Topic :: Software Development",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python",
+    "Framework :: Django :: 3.2",
+    "Framework :: Django :: 4.1",
+    "Framework :: Django :: 4.2",
+    "Framework :: Django :: 5.0",
+    "Framework :: Django",
+    "Typing :: Typed",
+]
+packages = [{ include = "rest_testing" },]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<4.0"
+django = ">=3.2"
+pydantic = ">=2.0"
+
+[tool.poetry.group.dev.dependencies]
+coverage = "^6.5.0"
+pre-commit = "^2.20.0"
+pydoc-markdown = "^4.8.2"
+pyyaml = "^6.0.1"
+python-frontmatter = "^1.0.1"
+
+[tool.ruff.lint]
+select = [
+    "E",  # pycodestyle errors
+    "W",  # pycodestyle warnings
+    "F",  # pyflakes
+    "I",  # isort
+    "C",  # flake8-comprehensions
+    "B",  # flake8-bugbear
+    "UP", # pyupgrade
+]
+ignore = [
+    "E501",  # line too long, handled by black
+    "B008",  # do not perform function calls in argument defaults
+]
+
+[tool.ruff.lint.isort]
+known-local-folder = ["rest_testing", "tests", "examples"]
