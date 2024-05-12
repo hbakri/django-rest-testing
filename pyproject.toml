@@ -5,7 +5,7 @@ build-backend = "poetry.core.masonry.api"
 [tool.poetry]
 name = "django-rest-testing"
 version = "0.1.0"
-description = "Declarative REST API Tests with Django."
+description = "Declarative Testing for RESTful APIs with Django."
 authors = ["Hicham Bakri <hicham.bakri76@gmail.com>"]
 maintainers = ["Hicham Bakri <hicham.bakri76@gmail.com>"]
 readme = "README.md"
