@@ -1,4 +1,4 @@
-name: readmeio-docs
+name: docs
 
 on:
   workflow_dispatch:
@@ -8,7 +8,7 @@ on:
         required: true
 
 jobs:
-  build-and-publish-readmeio-docs:
+  build-and-publish-docs:
     runs-on: ubuntu-latest
 
     steps:
