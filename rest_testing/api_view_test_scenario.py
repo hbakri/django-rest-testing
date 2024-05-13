@@ -13,15 +13,15 @@ class APIViewTestScenario(Generic[ResponseBodyType]):
     body), and assertions to be made on the response.
 
     Args:
-        description(str, optional): A description of the test scenario.
-        path_parameters(dict, optional): The path parameters for the request.
-        query_parameters(dict, optional): The query parameters for the request.
-        request_body(dict, optional): The request body for the request.
-        request_headers(dict, optional): The request headers for the request.
-        expected_response_status(int, optional): The expected status code of the response.
-        expected_response_body_type(type, optional): The expected type of the response body.
-        expected_response_body(Any, optional): The expected response body.
-        assertions(callable, optional): A function that takes the response and the
+        description (str, optional): A description of the test scenario.
+        path_parameters (dict, optional): The path parameters for the request.
+        query_parameters (dict, optional): The query parameters for the request.
+        request_body (dict, optional): The request body for the request.
+        request_headers (dict, optional): The request headers for the request.
+        expected_response_status (int, optional): The expected status code of the response.
+        expected_response_body_type (type, optional): The expected type of the response body.
+        expected_response_body (Any, optional): The expected response body.
+        assertions (callable, optional): A function that takes the response and the
             scenario as arguments and makes additional assertions on the response.
 
     Example:
