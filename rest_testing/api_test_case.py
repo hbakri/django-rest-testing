@@ -87,10 +87,10 @@ class APITestCase(TestCase):
         Args:
             method (str): The HTTP method of the request.
             path (str): The path of the request.
-            path_parameters (dict, optional): The path parameters of the request.
-            query_parameters (dict, optional): The query parameters of the request.
-            request_body (dict, optional): The request body of the request.
-            request_headers (dict, optional): The request headers of the request.
+            path_parameters (Optional[Dict[str, Any]], optional): The path parameters of the request.
+            query_parameters (Optional[Dict[str, Any]], optional): The query parameters of the request.
+            request_body (Optional[Dict[str, Any]], optional): The request body of the request.
+            request_headers (Optional[Dict[str, Any]], optional): The request headers of the request.
 
         Returns:
             HttpResponse: The response of the request.
@@ -138,8 +138,8 @@ class APITestCase(TestCase):
             method (str): The HTTP method of the request.
             path (str): The path of the request.
             scenario (APIViewTestScenario): The scenario to test.
-            default_assertions (callable, optional): The default assertions to make on
-                the response if no assertions are provided in the scenario.
+            default_assertions (Optional[Callable], optional): The default assertions
+                to make on the response if no assertions are provided in the scenario.
 
         Example:
         ```python
@@ -209,8 +209,8 @@ class APITestCase(TestCase):
             method (str): The HTTP method of the request.
             path (str): The path of the request.
             scenarios (List[APIViewTestScenario]): The scenarios to test.
-            default_assertions (callable, optional): The default assertions to make on
-                the response if no assertions are provided in the scenarios.
+            default_assertions (Optional[Callable], optional): The default assertions
+                to make on the response if no assertions are provided in the scenarios.
 
         Example:
         ```python
